@@ -1,0 +1,19 @@
+.button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 50px;
+    padding: 5px 51px;
+    background-color: $color-accent;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    transition: 0.3s;
+    @media (hover: hover) {
+        &:hover {
+            background-color: #d1aa5486;
+        }
+    }
+}

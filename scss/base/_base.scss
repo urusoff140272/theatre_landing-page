@@ -2,33 +2,32 @@ html {
     scroll-behavior: smooth;
 }
 
-body{
-    background-color: rgb(127, 127, 193);
-    font-family: "Montserrat", Verdana, sans-serif;
+body {
+    background-color: $color-dark;
+    font-family: $font-family;
     color: $color-textMain;
 }
 
-.wrapper{
+.wrapper {
     min-height: 100%;
     overflow: hidden;
     display: flex;
     flex-direction: column;
 }
 
-.container{
-    max-width: 1046px;
+.container {
+    max-width: 1950px;
     margin: 0 auto;
     padding: 0 15px;
-    box-sizing: content-box;
 }
 
-.main{
+.main {
     flex: 1 1 auto;
 }
 
-.ibg{
+.ibg {
     position: relative;
-    img{
+    img {
         position: absolute;
         width: 100%;
         height: 100%;
