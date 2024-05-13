@@ -1,8 +1,6 @@
 .main__rating {
     margin-top: 92px;
 }
-.rating {
-}
 
 .rating__body {
     margin: 0 auto;
@@ -18,9 +16,6 @@
     padding: 186px 96px 126px 190px;
 }
 
-.rating__date {
-
-}
 .rating__year {
     font-weight: 700;
     font-size: 72px;
@@ -30,8 +25,6 @@
     color: $color-accent;
 }
 
-.rating__description {
-}
 .rating__stars {
     display: flex;
     gap: 25px;
@@ -44,9 +37,6 @@
     font-size: 36px;
     line-height: 1.5;
     max-width: 540px;
-}
-
-.rating__background {
 }
 
 .rating__background-image {

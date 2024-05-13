@@ -23,5 +23,21 @@ const swiperProjects = new Swiper('.projects__slider', {
         maxRatio: 3,
         minRatio: 1,
     },
-
 })
+
+let swiperPartnersTop = new Swiper('.partners__slider-top', {
+    loop: true,
+    // freeMode: true,
+    slidesPerView: 4,
+    spaceBetween: 30,
+})
+
+let swiperPartnersBottom = new Swiper('.partners__slider-bottom', {
+    loop: true,
+    // freeMode: true,
+    slidesPerView: 4,
+    spaceBetween: 30,
+})
+
+swiperPartnersTop.controller.control = swiperPartnersBottom;
+swiperPartnersBottom.controller.control = swiperPartnersTop;
