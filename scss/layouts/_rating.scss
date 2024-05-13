@@ -1,0 +1,60 @@
+.main__rating {
+    margin-top: 92px;
+}
+.rating {
+}
+
+.rating__body {
+    margin: 0 auto;
+    max-width: 1111px;
+    position: relative;
+}
+
+.rating__content{
+    display: flex;
+    justify-content: center;
+    gap: 120px;
+    align-items: center;
+    padding: 186px 96px 126px 190px;
+}
+
+.rating__date {
+
+}
+.rating__year {
+    font-weight: 700;
+    font-size: 72px;
+    letter-spacing: 0.1em;
+    line-height: calc(98 / 72 * 100%);
+    text-transform: uppercase;
+    color: $color-accent;
+}
+
+.rating__description {
+}
+.rating__stars {
+    display: flex;
+    gap: 25px;
+    margin-bottom: 25px;
+}
+
+.rating__text {
+    font-family: $second-family;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.5;
+    max-width: 540px;
+}
+
+.rating__background {
+}
+
+.rating__background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+}
+

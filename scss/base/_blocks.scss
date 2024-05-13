@@ -17,3 +17,23 @@
         }
     }
 }
+
+h2 {
+    font-weight: 700;
+    font-size: 64px;
+    letter-spacing: 0.1em;
+    line-height: calc(87 / 64 * 100%);
+    text-transform: uppercase;
+    span {
+        color: $color-accent;
+    }
+    text-align: center;
+}
+
+h3 {
+    font-weight: 700;
+    font-size: 21px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    line-height: calc(29 / 21 * 100%);
+}

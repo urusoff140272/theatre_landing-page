@@ -127,6 +127,26 @@ a {
   }
 }
 
+h2 {
+  font-weight: 700;
+  font-size: 64px;
+  letter-spacing: 0.1em;
+  line-height: 135.9375%;
+  text-transform: uppercase;
+  text-align: center;
+}
+h2 span {
+  color: #d1a954;
+}
+
+h3 {
+  font-weight: 700;
+  font-size: 21px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  line-height: 138.0952380952%;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -309,7 +329,7 @@ body {
 
 .top__background {
   width: 100%;
-  padding-bottom: 1045px;
+  height: 100%;
   position: absolute;
   left: 0;
   top: 0;
@@ -359,4 +379,225 @@ body {
     fill: #d1a954;
     fill-opacity: 1;
   }
+}
+
+.main__about {
+  margin-top: 150px;
+}
+
+.about__title {
+  margin-bottom: 78px;
+}
+
+.about__container {
+  display: flex;
+  gap: 31px;
+  justify-content: center;
+}
+
+.about__content {
+  flex: 0 1 23.5%;
+}
+
+.about__content-title {
+  margin-bottom: 35px;
+}
+
+.about__content-text {
+  font-family: "OpenSans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.about__numbers {
+  flex: 0 1 11%;
+}
+
+.about__numbers-title {
+  margin-bottom: 34px;
+}
+
+.about__numbers-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.item-about__image {
+  margin-bottom: 16px;
+}
+
+.item-about__text {
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 0.05em;
+  line-height: 137.5%;
+}
+.item-about__text span {
+  color: #d1a954;
+}
+
+.about__image-container {
+  flex: 0 1 20.9%;
+}
+
+.about__image {
+  padding-bottom: 73.925%;
+}
+
+.main__projects {
+  margin-top: 143px;
+}
+
+.projects__titlle {
+  margin-bottom: 78px;
+}
+
+.projects__slider {
+  max-width: 1768px;
+  width: 100%;
+  margin-left: 135px;
+}
+
+.projects__slide {
+  max-width: 442px;
+  cursor: url("../img/projects/cursor.svg"), pointer;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.projects__img-name {
+  position: absolute;
+  z-index: 1;
+  top: 40px;
+  left: 40px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 137.5%;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  opacity: 1;
+  transition: 0.5s;
+}
+
+.projects__img-date {
+  position: absolute;
+  z-index: 1;
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+  left: 40px;
+  bottom: 40px;
+  font-weight: 700;
+  font-size: 18px;
+  letter-spacing: 0.1em;
+  line-height: 138.8888888889%;
+  text-transform: uppercase;
+  opacity: 1;
+  transition: 0.5s;
+}
+
+.projects__img {
+  padding-bottom: 124.43%;
+}
+.projects__img::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #333;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.65;
+  transition: 0.5s;
+}
+@media (hover: hover) {
+  .projects__img:hover::after {
+    opacity: 0;
+  }
+  .projects__img:hover .projects__img-name,
+  .projects__img:hover .projects__img-date {
+    opacity: 0;
+  }
+  .projects__img:hover::before {
+    display: none;
+  }
+}
+
+.projects__img_accent::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/projects/cursor.svg);
+  background-repeat: no-repeat;
+  position: absolute;
+  left: calc(50% - 50px);
+  top: calc(50% - 50px);
+  z-index: 1;
+}
+@media (hover: hover) {
+  .projects__img_accent:hover::before {
+    display: none;
+  }
+}
+
+.swiper-slide-zoomed {
+  z-index: 10;
+}
+.swiper-slide-zoomed .projects__img-name,
+.swiper-slide-zoomed .projects__img-date {
+  opacity: 0;
+}
+.swiper-slide-zoomed .projects__img::after {
+  display: none;
+}
+.swiper-slide-zoomed .projects__img_accent::before {
+  display: none;
+}
+
+.main__rating {
+  margin-top: 92px;
+}
+
+.rating__body {
+  margin: 0 auto;
+  max-width: 1111px;
+  position: relative;
+}
+
+.rating__content {
+  display: flex;
+  justify-content: center;
+  gap: 120px;
+  align-items: center;
+  padding: 186px 96px 126px 190px;
+}
+
+.rating__year {
+  font-weight: 700;
+  font-size: 72px;
+  letter-spacing: 0.1em;
+  line-height: 136.1111111111%;
+  text-transform: uppercase;
+  color: #d1a954;
+}
+
+.rating__stars {
+  display: flex;
+  gap: 25px;
+  margin-bottom: 25px;
+}
+
+.rating__text {
+  font-family: "OpenSans", sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.5;
+  max-width: 540px;
+}
+
+.rating__background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
 }/*# sourceMappingURL=styles.css.map */
