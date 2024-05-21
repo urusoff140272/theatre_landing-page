@@ -135,8 +135,9 @@
         display: none;
     }
     .top__content {
-        max-width: 690px;
+        max-width: 705px;
         margin-top: 95px;
+        margin-left: 15px;
     }
     .top__content-title {
         margin-bottom: 24px;
@@ -152,6 +153,9 @@
         padding-top: 158px;
         height: 100%;
         padding-bottom: 158px;
+    }
+    .top__content {
+        margin-left: 0;
     }
     .top__social {
         display: none;

@@ -1,11 +1,11 @@
+//--------------- swipr top ---------------------------------------------------------------------
+
 const swiperTop = new Swiper('.top__slider', {
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
     },
-
     speed: 500,
-
     effect: 'cards',
     cardsEffect: {
         perSlideOffset: 10,
@@ -15,35 +15,78 @@ const swiperTop = new Swiper('.top__slider', {
     },
 });
 
+
+// ------------------ swiper projects --------------------------------------------------------------
+
 const swiperProjects = new Swiper('.projects__slider', {
     loop: true,
-    freeMode: true,
-    slidesPerView: 4,
+    // freeMode: true,
+    slidesPerView: 1.1,
+
+    breakpoints: {
+        768: {
+            slidesPerView: 1.5,
+        },
+        1442: {
+            slidesPerView: 4,
+        },
+    },
     zoom: {
         maxRatio: 3,
         minRatio: 1,
     },
 })
 
+
+//------------------ swiper partners ----------------------------------------------------------------
+
 let swiperPartnersTop = new Swiper('.partners__slider-top', {
     loop: true,
     // freeMode: true,
-    slidesPerView: 4,
+    slidesPerView: 1.3,
     spaceBetween: 30,
+    breakpoints: {
+        576: {
+            slidesPerView: 1.9,
+            spaceBetween: 30,
+        },
+        768: {
+            slidesPerView: 2.5,
+            spaceBetween: 25,
+        },
+        1442: {
+            slidesPerView: 4,
+            spaceBetween: 30,
+        },
+    },
 })
 
 let swiperPartnersBottom = new Swiper('.partners__slider-bottom', {
     loop: true,
     // freeMode: true,
-    slidesPerView: 4,
+    slidesPerView: 1.3,
     spaceBetween: 30,
+    breakpoints: {
+        576: {
+            slidesPerView: 1.9,
+            spaceBetween: 30,
+        },
+        768: {
+            slidesPerView: 2.5,
+            spaceBetween: 25,
+        },
+        1442: {
+            slidesPerView: 4,
+            spaceBetween: 30,
+        },
+    },
 })
 
 swiperPartnersTop.controller.control = swiperPartnersBottom;
 swiperPartnersBottom.controller.control = swiperPartnersTop;
 
 
-//--------------БУРГЕР МЕНЮ--------------------------------------------------------------------------
+//-------------- БУРГЕР МЕНЮ --------------------------------------------------------------------------
 const burgerMenu = document.querySelector('.header__burger');
 const navigationMenu = document.querySelector('.header__list');
 const menuLinks = document.querySelectorAll('.header__link');
