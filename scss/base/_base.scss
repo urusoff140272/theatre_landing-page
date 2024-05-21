@@ -7,9 +7,15 @@ body {
     font-family: $font-family;
     color: $color-textMain;
 }
+body._lock{
+    overflow: hidden;
+}
 
 .wrapper {
     min-height: 100%;
+    // * {
+    //     outline: 1px solid green !important;
+    // }
     overflow: hidden;
     display: flex;
     flex-direction: column;
