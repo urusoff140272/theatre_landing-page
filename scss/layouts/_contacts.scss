@@ -10,6 +10,7 @@
 .contacts__content {
     margin: 0 auto;
     display: flex;
+    flex-direction: row-reverse;
     max-width: 1110px;
     justify-content: space-between;
 }
@@ -32,7 +33,8 @@
 }
 .contacts__form-container {
     display: flex;
-    gap: 30px;
+    row-gap: 30px;
+    column-gap: 30px;
     margin-bottom: 40px;
 }
 .contacts__form-column {
@@ -41,7 +43,7 @@
     }
 }
 .contacts__form-input {
-    width: 180px;
+    min-width: 180px;
     height: 35px;
 }
 .contacts__form-area {
@@ -67,6 +69,7 @@
 }
 .contacts__form-content {
     display: flex;
+    flex-direction: row-reverse;
     justify-content: space-between;
     gap: 15px;
 }
@@ -80,4 +83,89 @@
 }
 .contacts__form-button {
     padding: 5px 46px;
+}
+
+@media (max-width: 1441px) {
+    .main__contacts {
+        margin-top: 193px;
+        margin-bottom: 54px;
+    }
+    .contacts__body {
+        margin-left: 95px;
+        margin-right: 15px;
+    }
+    .contacts__title {
+        font-size: 48px;
+        margin-bottom: 100px;
+    }
+    .contacts__content {
+        display: block;
+        max-width: 690px;
+    }
+    .contacts__contact {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 80px;
+    }
+    .contacts__contact-mail {
+        text-align: end;
+    }
+}
+
+@media (max-width: 768px) {
+    .contacts__body {
+        margin-left: 15px;
+    }
+    .main__contacts {
+        margin-top: 163px;
+        margin-bottom: 34px;
+    }
+    .contacts__title {
+        margin-bottom: 59px;
+    }
+    .contacts__contact {
+        margin-top: 61px;
+    }
+}
+
+@media (max-width: 620px) {
+    .main__contacts {
+        margin-top: 152px;
+    }
+    .contacts__form-container {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .contacts__content {
+        max-width: 509px;
+    }
+    .contacts__form-container{
+        column-gap: 49px;
+    }
+    .contacts__form-content {
+        flex-wrap: wrap;
+    }
+    .contacts__form-column {
+        flex: 1 1 auto;
+    }
+    .contacts__form-input {
+        width: 100%;
+    }
+    .contacts__form-area {
+        width: 100%;
+        height: 100px;
+    }
+    .contacts__form-content {
+        justify-content: center;
+        gap: 32px;
+    }
+}
+@media (max-width: 515px) {
+    .contacts__contact{
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+    .contacts__contact-mail{
+        text-align: start;
+    }
 }

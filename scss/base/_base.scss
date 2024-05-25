@@ -13,10 +13,10 @@ body._lock{
 
 .wrapper {
     min-height: 100%;
-    * {
-        outline: 1px solid green !important;
-    }
-    // overflow: hidden;
+    // * {
+    //     outline: 1px solid green !important;
+    // }
+    overflow: hidden;
     display: flex;
     flex-direction: column;
 }
